@@ -8,7 +8,7 @@ const Home = () => {
             <header className="App-header">
                 <img src={process.env.PUBLIC_URL + '/images/poke.png'} width='400' alt='poke'/>
                 <h1>Poke App</h1>
-                <Link to='/pokemons'>Ver Pokemons</Link>
+                <Link to='/pokemons'>Comenzar!</Link>
             </header>
           </div>
         );

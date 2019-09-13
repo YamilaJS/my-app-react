@@ -9,7 +9,7 @@ function List({ pokedata }) {
                 {pokedata.map((pokemon, index) => {
                     let url= "https://github.com/PokeAPI/sprites/blob/master/sprites/pokemon/other-sprites/official-artwork/"
                     let pokeIndex = pokemon.url.split('/')[pokemon.url.split('/').length - 2]
-                    return <PokeCard to={`/poke-info/${pokeIndex}/${pokemon.name}`} name={pokemon.name} image={`${url}${pokeIndex}.png?raw=true`} />
+                    return <PokeCard to={`/poke-info/${pokeIndex}/${pokemon.name}`} name={pokemon.name} image={`${url}${pokeIndex}.png?raw=true`} key={`pokeNum${index}`}/>
                 })}
             </Grid>
         </Fragment>
